@@ -68,25 +68,31 @@ A heatmap was created displaying the humidity for every city from Part I.
 
 Then, the data was filtered using the follwoing criteria to generate a list of potenital vaction locaitons.
 
-  * A max temperature lower than 90 degrees but higher than 40.
+  * A max temperature lower than 80 degrees but higher than 50.
 
   * Humidity percentage less than 60%.
 
-  * Country of Australia.
+  * Country of Chile.
   
   The locations selected were:
   
-  * Hobart Australia
-  * Cockburn, Australia
-  * Narrabri, Australia
-  * Innisfail, Australia
-  * Mackay, Australia
-  * Townsville, Australia
-  * Ulladulla, Australia
-  * Flinders, Australia
+  * Cape, Chile
+  * Talcahuano, Chile
+  * Lebu, Chile
+  * Valparaiso, Chile
+  * Coihueco, Chile
+  * Ancud, Chile
   
- Then, Google Places API was used to find the first hotel for each city located within 5000 meters of the coordinates of the heat locations.
+ Then, Google Places API was used to find the first hotel for each city located within 10000 meters of the coordinates of the heat locations.
+ Had to move search out to 10000 meters to find hotel for Coihueco, Chile.
+ 
+  * Cape, Chile, Hotel : Hotel Molino Viejo
+  * Talcahuano, Chile, Hotel : Holiday Inn Express Concepcion
+  * Lebu, Chile, Hotel : Konui Hotel - Lodge
+  * Valparaiso, Chile, Hotel : La Blanca Hotel
+  * Coihueco, Chile, Hotel : Cabanas Don Yito
+  * Ancud, Chile, Hotel : Panamericana Hotel Ancud
 
-The hotels were then layered on top of the humidity heatmap with a pin containing the **Hotel Name**, **City**, and **Country**.
+The hotels were then layered on top of the humidity heatmap with a label containing the **Name**, **City**, and **Country**.
 
 
